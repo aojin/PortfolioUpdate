@@ -1,16 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Spot } from "./Styles";
 import { css, jsx } from "@emotion/core";
 
 const SpotLight = (props) => {
   const {
-    detectedEnvironment: {
-      isMouseDetected = false,
-      isTouchDetected = false,
-    } = {},
     elementDimensions: { width = 0, height = 0 } = {},
-    isActive = false,
-    isPositionOutside = false,
     position: { x = 0, y = 0 } = {},
   } = props;
 
@@ -22,7 +16,7 @@ const SpotLight = (props) => {
     radial-gradient(
       circle at ${percentagePos},
       transparent 160px,
-      rgba(0, 0, 0, 0.92) 240px
+      rgba(0, 0, 0, 0.9) 200px
     );
   `;
 

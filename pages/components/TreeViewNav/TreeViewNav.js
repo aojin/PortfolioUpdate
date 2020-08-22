@@ -9,7 +9,7 @@ import { Typography } from "@material-ui/core";
 
 import { useSpring, animated } from "react-spring/web.cjs"; // web.cjs is required for IE 11 support
 
-import { Container, Wrapper } from "./Styles";
+import { Container } from "./Styles";
 
 import ChevronRightSharpIcon from "@material-ui/icons/ChevronRightSharp";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
@@ -85,21 +85,18 @@ const StyledTreeItem = withStyles((theme) => ({
     marginLeft: 8,
   },
   group: {
-    backgroundColor: "transparent",
     marginRight: 10,
     marginTop: 8,
-    marginBottom: 36,
     paddingRight: 8,
+    paddingBottom: 8,
     borderRight: `1px dashed ${fade(theme.palette.text.secondary, 0.4)}`,
   },
   label: {
     backgroundColor: "transparent !important",
   },
   content: {
-    backgroundColor: "transparent",
     marginTop: 12,
   },
-  selected: {},
 }))((props) => (
   <TreeItem
     {...props}
@@ -110,17 +107,11 @@ const StyledTreeItem = withStyles((theme) => ({
 
 const useStyles = makeStyles({
   root: {
-    display: "flex",
-    justifyContent: "flex-start",
-    height: 264,
-    flexGrow: 1,
+    background: "rgba(0, 0, 0, 0.90)",
   },
 });
 
-const handleNavExpand = (e, isExpanded) => {
-  if (isExpanded) {
-  }
-};
+const handleNavExpand = (e, isExpanded) => {};
 
 const handleLabelClick = (tag) => {
   alert(tag);
@@ -136,20 +127,21 @@ export default function CustomizedTreeView() {
   const classes = useStyles();
 
   return (
-    <Container>
+    <Container id="treeViewContainer">
       <TreeView
+        id="treeViewComponent"
         dir="rtl"
         multiSelect={false}
         className={classes.root}
         onNodeToggle={handleNavExpand}
-        defaultExpanded={["1"]}
+        defaultExpanded={[]}
         defaultCollapseIcon={<MinusSquare />}
         defaultExpandIcon={<PlusSquare />}
         defaultEndIcon={<LeafIcon />}
       >
         <StyledTreeItem nodeId="1" label="navigation">
           <StyledTreeItem
-            style={{ margin: "24px 0" }}
+            style={{ margin: "12px 0" }}
             onLabelClick={(e) => {
               e.preventDefault();
               handleLabelClick("home");
