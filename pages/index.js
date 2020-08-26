@@ -4,7 +4,6 @@ import SpotLightBG from "./components/SpotLightBG/SpotLightBG";
 import TreeViewNav from "./components/TreeViewNav/TreeViewNav";
 import Resume from "./components/Resume/Resume";
 import ResumeViewer from "./components/ResumeViewer/ResumeViewer";
-import PDFJSBackend from "./backends/pdfjs";
 import ProjectsGrid from "./components/ProjectsGrid/ProjectsGrid";
 import SocialsNav from "./components/SocialsNav/SocialsNav";
 

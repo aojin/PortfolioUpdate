@@ -44,20 +44,16 @@ const ProjectCard = ({
           <BadgeRow>
             {technologies.map((tech) => {
               const imageSrc = logos[tech] || null;
-              return <Badge src={imageSrc} />;
+              return <Badge key={tech} src={imageSrc} />;
             })}
           </BadgeRow>
         </CardContent>
         <CardActions>
           <Link href={href}>
             {githubLink ? (
-              <Button variant="" size="small">
-                View GitHub
-              </Button>
+              <Button size="small">View GitHub</Button>
             ) : (
-              <Button variant="" size="small">
-                View The App
-              </Button>
+              <Button size="small">View The App</Button>
             )}
           </Link>
         </CardActions>

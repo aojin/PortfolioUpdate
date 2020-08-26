@@ -67,6 +67,7 @@ const ProjectsGrid = () => {
         {projects.map((project) => {
           return (
             <Card
+              key={project.projectTitle}
               title={project.projectTitle}
               description={project.description}
               href={project.href}
