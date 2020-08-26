@@ -63,7 +63,7 @@ const SocialsNav = () => {
         </animated.div>
       ) : (
         <Button onClick={handleToggle} color="primary" aria-label="open">
-          <ArrowRightIcon />
+          <ArrowLeftIcon />
         </Button>
       )}
     </Container>
