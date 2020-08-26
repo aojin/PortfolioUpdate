@@ -12,7 +12,7 @@ function SpringTrailHero() {
     opacity: 1,
     x: 0,
     height: 80,
-    from: { opacity: 0, x: 500, height: 0 },
+    from: { opacity: 0, x: 200, height: 0 },
   });
 
   return (

@@ -38,7 +38,12 @@ function BounceDownArrow() {
             .interpolate((x) => `scale(${x})`),
         }}
       >
-        <IconButton color="secondary" aria-label="scroll" size="medium">
+        <IconButton
+          href="#projects"
+          color="secondary"
+          aria-label="scroll"
+          size="medium"
+        >
           <ArrowDownwardIcon fontSize="large" color="secondary" />
         </IconButton>
       </animated.div>

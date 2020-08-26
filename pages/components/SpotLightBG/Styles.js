@@ -8,7 +8,7 @@ export const Container = styled.div`
 
   filter: ${(props) => (props.isMobile ? "grayscale(100%)" : "none")};
 
-  background-image: url("https://source.unsplash.com/random/2048×2048/?dark-neon");
+  background-image: url("https://source.unsplash.com/random/2048×2048/?safe-colorful-background");
   background-position: center;
   background-size: cover;
 `;
@@ -16,6 +16,7 @@ export const Container = styled.div`
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 200px;
+  grid-template-rows: 1fr 250px;
 `;
 
 export const CenteredFlexColumn = styled.div`

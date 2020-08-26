@@ -6,10 +6,9 @@ import TreeView from "@material-ui/lab/TreeView";
 import TreeItem from "@material-ui/lab/TreeItem";
 import Collapse from "@material-ui/core/Collapse";
 import { Typography } from "@material-ui/core";
-
 import { useSpring, animated } from "react-spring/web.cjs"; // web.cjs is required for IE 11 support
 
-import { Container } from "./Styles";
+import { Container, ProjectLink } from "./Styles";
 
 import ChevronRightSharpIcon from "@material-ui/icons/ChevronRightSharp";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
@@ -114,7 +113,7 @@ const useStyles = makeStyles({
 const handleNavExpand = (e, isExpanded) => {};
 
 const handleLabelClick = (tag) => {
-  alert(tag);
+  window.location.href = "#" + tag;
 };
 
 const buildLabel = (tag) => (
@@ -142,9 +141,9 @@ export default function CustomizedTreeView() {
         <StyledTreeItem nodeId="1" label="navigation">
           <StyledTreeItem
             style={{ margin: "12px 0" }}
-            onLabelClick={(e) => {
+            onClick={(e) => {
               e.preventDefault();
-              handleLabelClick("home");
+              handleLabelClick("");
             }}
             endIcon={<HomeOutlinedIcon color="secondary" />}
             nodeId="2"
@@ -152,21 +151,16 @@ export default function CustomizedTreeView() {
           />
 
           <StyledTreeItem
+            nodeId="3"
+            label="resume/cv -"
             onLabelClick={(e) => {
               e.preventDefault();
               handleLabelClick("resume");
             }}
-            nodeId="3"
-            label="resume/cv -"
           >
-            <StyledTreeItem
-              onClick={(e) => {
-                e.preventDefault();
-                handleLabelClick("exportPDF");
-              }}
-              nodeId="4"
-              label="export pdf"
-            />
+            <a style={{ fontFamily: "inherit" }} href="/2020Resume.pdf">
+              export pdf
+            </a>
           </StyledTreeItem>
           <StyledTreeItem
             onLabelClick={(e) => {
@@ -176,23 +170,54 @@ export default function CustomizedTreeView() {
             nodeId="5"
             label="projects -"
           >
-            <StyledTreeItem nodeId="6" label="climbShop" />
-            <StyledTreeItem nodeId="7" label="ghFrameworks" />
-            <StyledTreeItem nodeId="8" label="example 3" />
-            <StyledTreeItem nodeId="9" label="example 4" />
-          </StyledTreeItem>
-          <StyledTreeItem
-            onLabelClick={(e) => {
-              e.preventDefault();
-              handleLabelClick("contact");
-            }}
-            nodeId="10"
-            label={"contact me -"}
-          >
-            <StyledTreeItem nodeId="11" label="phone" />
-            <StyledTreeItem nodeId="12" label="email" />
-            <StyledTreeItem nodeId="13" label="github" />
-            <StyledTreeItem nodeId="14" label="linkedIn" />
+            <StyledTreeItem
+              nodeId="6"
+              label={
+                <ProjectLink href="https://climbshop.herokuapp.com/">
+                  climbShop
+                </ProjectLink>
+              }
+            />
+            <StyledTreeItem
+              nodeId="7"
+              label={
+                <ProjectLink href="https://github-framework-app.herokuapp.com/">
+                  ghFrameworks
+                </ProjectLink>
+              }
+            />
+            <StyledTreeItem
+              nodeId="8"
+              label={
+                <ProjectLink href="https://spacexreactapollo.herokuapp.com//">
+                  spacexGQL
+                </ProjectLink>
+              }
+            />
+            <StyledTreeItem
+              nodeId="9"
+              label={
+                <ProjectLink href="https://github.com/aojin/JPaintSwing">
+                  jPaint
+                </ProjectLink>
+              }
+            />
+            <StyledTreeItem
+              nodeId="10"
+              label={
+                <ProjectLink href="https://github.com/aojin/JokeServers">
+                  javaSocketsServer
+                </ProjectLink>
+              }
+            />
+            <StyledTreeItem
+              nodeId="11"
+              label={
+                <ProjectLink href="https://aojin-d3-circle-pack.herokuapp.com/">
+                  d3CirclePack
+                </ProjectLink>
+              }
+            />
           </StyledTreeItem>
         </StyledTreeItem>
       </TreeView>

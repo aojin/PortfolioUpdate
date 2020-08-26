@@ -16,7 +16,7 @@ const SpotLight = (props) => {
     radial-gradient(
       circle at ${percentagePos},
       transparent 160px,
-      rgba(0, 0, 0, 0.9) 200px
+      rgba(0, 0, 0, 0.8) 200px
     );
   `;
 

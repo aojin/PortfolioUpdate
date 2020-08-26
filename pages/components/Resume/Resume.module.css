@@ -1,0 +1,97 @@
+#resume {
+  padding: 0 2rem;
+  height: auto;
+  -webkit-font-smoothing: antialiased;
+  color: #fafafa;
+  background: rgba(0, 0, 0, 0.98);
+  margin-bottom: 0px;
+}
+
+#resume .inner {
+  width: 100%;
+}
+
+#resume p {
+  color: #fafafa;
+}
+
+.details {
+  font-family: Share Tech Mono;
+  font-size: 1rem;
+}
+
+.skill {
+  border: 1px solid #50a9d1;
+  fill: #50a9d1;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: auto;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.33333em;
+  padding: 7px 18px;
+  margin-top: 0.8em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+
+img.icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 12px;
+}
+
+.inner {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.right {
+  float: right;
+}
+
+.tagline {
+  margin-top: 0px;
+  padding-top: 50px;
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+  padding-bottom: 35px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fafafa;
+  font-family: Share Tech Mono;
+}
+
+.section-tagline {
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+  padding-bottom: 12px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #cec8c8;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fafafa;
+  font-family: Share Tech Mono;
+}
+
+@media (max-width: 650px) {
+  .details {
+    display: block;
+  }
+
+  .right {
+    display: none;
+  }
+
+  #jobTitle {
+    font-weight: lighter;
+  }
+}

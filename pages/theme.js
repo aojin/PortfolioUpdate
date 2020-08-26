@@ -5,7 +5,7 @@ import { red } from "@material-ui/core/colors";
 const theme = createMuiTheme({
   typography: {
     subtitle1: {
-      fontSize: 14,
+      fontSize: 16,
       fontFamily: "Share Tech Mono",
     },
     fontFamily: `"open sans", "Helvetica", "Arial", sans-serif`,
@@ -22,7 +22,7 @@ const theme = createMuiTheme({
       secondary: "#FFFAFA",
     },
     primary: {
-      main: "#556cd6",
+      main: "#fafafa",
     },
     secondary: {
       main: "#fffaf9",
