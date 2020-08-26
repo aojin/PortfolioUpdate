@@ -12,7 +12,10 @@ export default function Home({ isMobile }) {
     <div className={styles.container}>
       <Head>
         <title>Alex Jin - Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="https://raw.githubusercontent.com/aojin/PortfolioUpdate/master/public/favicon.ico"
+        />
       </Head>
       <TreeViewNav />
       <SocialsNav />
