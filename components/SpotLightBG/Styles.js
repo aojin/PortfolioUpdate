@@ -8,7 +8,7 @@ export const Container = styled.div`
 
   filter: ${(props) => (props.isMobile ? "grayscale(100%)" : "none")};
 
-  background-image: url("https://source.unsplash.com/random/2048×2048/?safe-colorful-background");
+  background-image: url("https://source.unsplash.com/random/2048×2048/?safe-neon-colorful-background");
   background-position: center;
   background-size: cover;
 `;
