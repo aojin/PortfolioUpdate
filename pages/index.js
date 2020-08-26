@@ -1,11 +1,11 @@
 import Head from "next/head";
 import styles from "./styles/Home.module.css";
-import SpotLightBG from "./components/SpotLightBG/SpotLightBG";
-import TreeViewNav from "./components/TreeViewNav/TreeViewNav";
-import Resume from "./components/Resume/Resume";
-import ResumeViewer from "./components/ResumeViewer/ResumeViewer";
-import ProjectsGrid from "./components/ProjectsGrid/ProjectsGrid";
-import SocialsNav from "./components/SocialsNav/SocialsNav";
+import SpotLightBG from "../components/SpotLightBG/SpotLightBG";
+import TreeViewNav from "../components/TreeViewNav/TreeViewNav";
+import Resume from "../components/Resume/Resume";
+import ResumeViewer from "../components/ResumeViewer/ResumeViewer";
+import ProjectsGrid from "../components/ProjectsGrid/ProjectsGrid";
+import SocialsNav from "../components/SocialsNav/SocialsNav";
 
 export default function Home({ isMobile }) {
   return (
