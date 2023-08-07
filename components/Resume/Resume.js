@@ -171,6 +171,9 @@ export default class Resume extends React.Component {
             <span className="skill">Ionic</span>
             <span className="skill">Hybrid Mobile</span>
             <span className="skill">Salesforce</span>
+            <span className="skill">Asana</span>
+            <span className="skill">Microsoft Teams</span>
+            <span className="skill">Slack</span>
           </div>
           <br />
           <br />
