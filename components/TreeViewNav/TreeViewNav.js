@@ -110,7 +110,7 @@ const useStyles = makeStyles({
   },
 });
 
-const handleNavExpand = (e, isExpanded) => {};
+const handleNavExpand = (e, isExpanded) => { };
 
 const handleLabelClick = (tag) => {
   window.location.href = "#" + tag;
@@ -150,6 +150,7 @@ export default function CustomizedTreeView() {
             label="home"
           />
 
+
           <StyledTreeItem
             nodeId="3"
             label="resume/cv -"
@@ -158,11 +159,11 @@ export default function CustomizedTreeView() {
               handleLabelClick("resume");
             }}
           >
-            <a style={{ fontFamily: "inherit" }} href="/2020Resume.pdf">
+            <a style={{ fontFamily: "inherit" }} href="/2023 Resume.pdf">
               export pdf
             </a>
           </StyledTreeItem>
-          <StyledTreeItem
+          {/* <StyledTreeItem
             onLabelClick={(e) => {
               e.preventDefault();
               handleLabelClick("projects");
@@ -218,7 +219,7 @@ export default function CustomizedTreeView() {
                 </ProjectLink>
               }
             />
-          </StyledTreeItem>
+          </StyledTreeItem> */}
         </StyledTreeItem>
       </TreeView>
     </Container>

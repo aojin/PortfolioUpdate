@@ -38,7 +38,7 @@ const SocialsNav = () => {
               aria-label="to LinkedIn"
               href="https://www.linkedin.com/in/alex-jin-aa1b2744/"
             ></Button>
-            <a href="mailto:ajin1@mail.depaul.edu" target="_top">
+            <a href="mailto:aojin91@gmail.com" target="_top">
               <Button
                 startIcon={<GitHubIcon />}
                 color="primary"
@@ -49,7 +49,7 @@ const SocialsNav = () => {
             <ListItem>
               <a
                 style={{ color: "#fafafa", paddingTop: "4px" }}
-                href="mailto:ajin1@mail.depaul.edu"
+                href="mailto:aojin91@gmail.com"
                 target="_top"
               >
                 <MailOutlineIcon />

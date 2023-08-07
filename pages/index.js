@@ -24,9 +24,9 @@ export default function Home({ isMobile }) {
         <section id="resume">
           <Resume />
         </section>
-        <section id="projects">
+        {/* <section id="projects">
           <ProjectsGrid />
-        </section>
+        </section> */}
       </main>
     </div>
   );

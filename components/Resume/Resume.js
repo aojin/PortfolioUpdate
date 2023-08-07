@@ -130,6 +130,53 @@ export default class Resume extends React.Component {
           <div>
             <div className="logo">
               <a href="https://www.ezfunnls.com/">
+                <img className="icon" src="/Assets/lplicon.png" alt="mb" />
+              </a>
+            </div>
+            <div className="details">
+              <b>Launchpad Lab</b>
+              <span className="right">
+                <i>2020 - 2023</i>
+              </span>
+              <br />
+              <b>
+                <span id="jobTitle">Frontend Developer, Project Lead</span>
+              </b>
+              <span className="right">
+                <i>Chicago, IL (Remote)</i>
+              </span>
+            </div>
+            <br />
+            <br />
+            <p style={{ color: "#fafafa" }}>
+              Built complex custom applications for clients across a broad range of verticals in both a primary Front End and project-lead Front End capacity. Worked in close cooperation with Product Managers, Designers and both Front and Back end developers to both gather client requirements and build products that exceeded client expectations.
+            </p>
+            <ul>
+              <li>
+                Worked closely with a client startup founder to produce an React/Rails based alpha build of his small-business investments platform on an aggressive timeline as the sole frontend developer paired with a single backend developer.
+              </li>
+              <li>
+                Built a custom Salesforce live agent application to enable real-time chat functionality and document share between customer agents and product knowledge experts for a major pharmaceutical company.
+              </li>
+              <li>
+                Spent a year and a half with a small team embedded with an enterprise financial services company building out a customer-facing React platform which automated and improved legacy processes surrounding asset custody. Our platform integrated disparate areas of the business and eliminated manual document processing and rework for key business units.
+              </li>
+              <li>
+                Using React and Ionic, rebuilt a legacy desktop-only client portal into a desktop + mobile solution for an accounting firm specializing in the trucking vertical.
+              </li>
+            </ul>
+            <br />
+            <span className="skill">React</span>
+            <span className="skill">Rails</span>
+            <span className="skill">Ionic</span>
+            <span className="skill">Hybrid Mobile</span>
+            <span className="skill">Salesforce</span>
+          </div>
+          <br />
+          <br />
+          <div>
+            <div className="logo">
+              <a href="https://www.ezfunnls.com/">
                 <img className="icon" src="/Assets/ezf.png" alt="mb" />
               </a>
             </div>
