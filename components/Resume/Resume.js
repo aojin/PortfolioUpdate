@@ -129,7 +129,7 @@ export default class Resume extends React.Component {
           </p>
           <div>
             <div className="logo">
-              <a href="https://www.ezfunnls.com/">
+              <a href="https://www.launchpadlab.com/">
                 <img className="icon" src="/Assets/lplicon.png" alt="mb" />
               </a>
             </div>
